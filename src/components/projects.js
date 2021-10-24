@@ -5,10 +5,4 @@ export const projects = [
         projectImage:'../images/blank.jpg',
         projectUrl: './'
     },
-    {
-        id:2,
-        projectName:'Count Down',
-        projectImage:'../images/blank.jpg',
-        projectUrl: './'
-    },
 ];
