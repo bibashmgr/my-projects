@@ -2,7 +2,7 @@ export const projects = [
     {
         id:1,
         projectName:'Counter',
-        projectImage:'../images/blank.jpg',
+        projectImage:require('../assets/default-image.png').default,
         projectUrl: './'
     },
 ];

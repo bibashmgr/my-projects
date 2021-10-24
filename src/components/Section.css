@@ -1,0 +1,17 @@
+/* project-container//card */
+
+.project-box {
+    cursor: pointer;
+}
+
+.project-image {
+    overflow: hidden;
+}
+
+.project-image img {
+    transition: all 0.25s;
+}
+
+.project-image:hover img {
+    transform: scale(1.25, 1.25);
+}
