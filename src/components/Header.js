@@ -1,17 +1,22 @@
-import React from 'react'
+import React from 'react';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 
 const  Header = () => {
     return (
 
-        <header className='header-container'>
-            <nav className='navbar navbar-dark bg-dark py-3'>
-                <div className='container justify-content-center'>
-                    <div className='navbar-brand fw-bolder fs-3'>
-                        My React Projects
+        <Router>
+            <header className='header-container'>
+                <nav className='navbar navbar-dark bg-dark py-3'>
+                    <div className='container justify-content-center'>
+                        <div className='navbar-brand fw-bolder fs-3'>
+                            <Link to='/' className='text-decoration-none text-white'>
+                                My React Projects
+                            </Link>
+                        </div>
                     </div>
-                </div>
-            </nav>
-        </header>
+                </nav>
+            </header>
+        </Router>
 
     );
 }
