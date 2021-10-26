@@ -26,9 +26,11 @@ const Counter = () => {
             <Nav></Nav>
             <section className='container mt-5 counter-container'>
                 <div className='w-50 text-center mt-5 pb-5'>
+                    {/* heading */}
                     <div className='h1 mt-5'>
                         Counter
                     </div>
+                    {/* body */}
                     <div className='mt-5'>
                         <div className='value'>
                             {value}
