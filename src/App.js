@@ -7,6 +7,7 @@ import Home from './components/Home';
 import Error from './components/Error';
 
 //apps
+import Counter from './apps/Counter';
 
 const App = () => {
   return (
@@ -15,6 +16,9 @@ const App = () => {
         <Switch>
           <Route exact path='/'>
             <Home></Home>
+          </Route>
+          <Route exact path='/counter'>
+            <Counter></Counter>
           </Route>
           <Route path='*'>
             <Error></Error>

@@ -3,14 +3,13 @@ import React from 'react';
 
 // components
 import Nav from './Nav';
+import Section from './Section';
 
 const Home = () => {
     return (
         <>
             <Nav></Nav>
-            <div>
-                This is Home.
-            </div>
+            <Section></Section>
         </>
     )
 }
