@@ -1,4 +1,7 @@
+// dependencies
 import React from 'react';
+
+// components
 import Nav from './Nav';
 
 const Home = () => {
