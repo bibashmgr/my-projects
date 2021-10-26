@@ -1,7 +1,7 @@
 export const projects = [
     {   
         id: 1,
-        name: 'counter',
+        name: 'Counter',
         url: '/counter'
     },
 ];

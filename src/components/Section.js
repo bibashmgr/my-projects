@@ -5,8 +5,13 @@ import {Link} from 'react-router-dom';
 // components
 import {projects} from './projects';
 
+// css
+import '../styles/Section.css';
+
 // assets
-import defaultImage from '../assets/default-image.png';
+import {
+    Default
+} from '../assets/index';
 
 const Section = () => {
     return (
@@ -18,10 +23,10 @@ const Section = () => {
                         return(
                         <Link to={url} key={id} className='project-box card shadow-sm text-decoration-none text-dark'>
                             <div className='project-image'>
-                                <img src={defaultImage} alt={name} className='card-img-top' />
+                                <img src={Default} alt={name} className='card-img-top' />
                             </div>
                             <div className='project-body card-body'>
-                                <div className='card-title h5 text-center text-capitalize'>
+                                <div className='card-title h5 text-center'>
                                     {name}
                                 </div>
                             </div>
