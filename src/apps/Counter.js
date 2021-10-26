@@ -20,22 +20,30 @@ const Counter = () => {
     const handleReset = () => {
         setValue(0);
     }
-    
+
     return (
         <>
             <Nav></Nav>
-            <section className='container mt-5 text-center'>
-                <div className='h1'>
-                    Counter
-                </div>
-                <div className='mt-5'>
-                    <h1 className='value'>
-                        {value}
-                    </h1>
-                    <div className='buttons'>
-                        <button type='button' className='btn' onClick={handleSub}>Decrease</button>
-                        <button type='button' className='btn' onClick={handleReset}>Reset</button>
-                        <button type='button' className='btn' onClick={handleAdd}>Increase</button>
+            <section className='container mt-5 counter-container'>
+                <div className='w-50 text-center mt-5 pb-5'>
+                    <div className='h1 mt-5'>
+                        Counter
+                    </div>
+                    <div className='mt-5'>
+                        <div className='value'>
+                            {value}
+                        </div>
+                        <div className='buttons row mt-2 w-50 mx-auto pb-5'>
+                            <div onClick={handleSub} className='col-4 text-end'>
+                                <i class="bi bi-dash-circle text-warning fs-1"></i>
+                            </div>
+                            <div onClick={handleReset} className='col-4 text-center'>
+                                <i class="bi bi-arrow-repeat text-danger fs-1"></i>
+                            </div>
+                            <div onClick={handleAdd} className='col-4 text-start'>
+                                <i class="bi bi-plus-circle text-success fs-1"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
