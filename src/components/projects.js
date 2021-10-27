@@ -4,4 +4,9 @@ export const projects = [
         name: 'Counter',
         url: '/counter'
     },
+    {   
+        id: 2,
+        name: 'Countdown',
+        url: '/countdown'
+    },
 ];
