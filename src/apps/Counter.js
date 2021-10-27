@@ -24,28 +24,30 @@ const Counter = () => {
     return (
         <>
             <Nav></Nav>
-            <section className='container mt-5 counter-container'>
-                <div className='w-50 text-center mt-5 pb-5'>
-                    {/* heading */}
-                    <div className='h1 mt-5'>
-                        Counter
+            <section className='container mt-5'>
+                <div className='row text-center'>
+                    <div className='col'>
+                        <div className='h1'>
+                            Counter
+                        </div>
                     </div>
-                    {/* body */}
-                    <div className='mt-5'>
+                </div>
+                <div className='row text-center mt-5'>
+                    <div className='col'>
                         <div className='value'>
                             {value}
                         </div>
-                        <div className='buttons row mt-2 w-50 mx-auto pb-5'>
-                            <div onClick={handleSub} className='col-4 text-end'>
-                                <i class="bi bi-dash-circle text-warning fs-1"></i>
-                            </div>
-                            <div onClick={handleReset} className='col-4 text-center'>
-                                <i class="bi bi-arrow-repeat text-danger fs-1"></i>
-                            </div>
-                            <div onClick={handleAdd} className='col-4 text-start'>
-                                <i class="bi bi-plus-circle text-success fs-1"></i>
-                            </div>
-                        </div>
+                    </div>
+                </div>
+                <div className='row text-center buttons'>
+                    <div className='col-3 col-sm-2 col-md-1'>
+                        <i className="bi bi-dash-circle text-warning h1" onClick={handleSub}></i>
+                    </div>
+                    <div className='col-3 col-sm-2 col-md-1'>
+                        <i className="bi bi-arrow-repeat text-danger h1" onClick={handleReset}></i>
+                    </div>
+                    <div className='col-3 col-sm-2 col-md-1'>
+                        <i className="bi bi-plus-circle text-success h1" onClick={handleAdd}></i>
                     </div>
                 </div>
             </section>

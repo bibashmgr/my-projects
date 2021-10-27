@@ -1,20 +1,10 @@
-.counter-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-
-/* body */
-
 .value {
-    font-size: 60px;
-    font-weight: 500;
+    font-size: 5rem;
 }
 
 .buttons {
     display: flex;
+    justify-content: center;
 }
 
 i {
