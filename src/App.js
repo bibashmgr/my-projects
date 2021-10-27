@@ -21,9 +21,9 @@ const App = () => {
           <Route exact path='/counter'>
             <Counter></Counter>
           </Route>
-          {/* <Route exact path='/countdown'>
+          <Route exact path='/countdown'>
             <Countdown></Countdown>
-          </Route> */}
+          </Route>
           <Route path='*'>
             <Error></Error>
           </Route>
