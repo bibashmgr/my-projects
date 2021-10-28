@@ -2,11 +2,13 @@ export const projects = [
     {   
         id: 1,
         name: 'Counter',
-        url: '/counter'
+        url: '/counter',
+        img: './assets/counter.png'
     },
     {   
         id: 2,
         name: 'Countdown',
-        url: '/countdown'
+        url: '/countdown',
+        img: './assets/default-image.png'
     },
 ];
