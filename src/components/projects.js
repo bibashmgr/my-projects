@@ -9,6 +9,6 @@ export const projects = [
         id: 2,
         name: 'Countdown',
         url: '/countdown',
-        img: './assets/default-image.png'
+        img: './assets/countdown.png'
     },
 ];
