@@ -1,5 +1,6 @@
 // dependencies
 import React from 'react';
+import {useState} from 'react';
 
 // components
 import Nav from '../components/Nav';
@@ -8,6 +9,27 @@ import Nav from '../components/Nav';
 import '../styles/Countdown.css';
 
 const Countdown = () => {
+
+    // const initalValue = {
+    //     day: 0,
+    //     hour: 0,
+    //     min: 0,
+    //     sec: 0
+    // }
+
+    const [play, setPlay] = useState(false);
+    const [btn, setBtn] = useState('bi bi-play-circle text-success');
+    // const [value, setValue] = useState(initalValue);
+
+    const handleCount = () => {
+        setPlay(!play);
+        if(btn.search(/play/) > 0){
+            setBtn('bi bi-arrow-repeat text-danger');
+        }else {
+            setBtn('bi bi-play-circle text-success');
+        }
+    };
+
     return (
         <>
             <Nav></Nav>
@@ -57,9 +79,8 @@ const Countdown = () => {
                 </form>
 
                 <div className='row mt-5 text-center'>
-                    <div className='text-success h1'>
-                        <i className="bi bi-play-circle"></i>
-                        {/* <i className="bi bi-arrow-repeat text-danger h1"></i> */}
+                    <div className='h1'>
+                        <i className={btn} id='button' onClick={handleCount}></i>
                     </div>
                 </div>
 
