@@ -20,7 +20,7 @@ const Section = () => {
                             <div className='project-image'>
                                 <img src={img} alt={name} className='card-img-top' />
                             </div>
-                            <div className='project-body card-body'>
+                            <div className='project-body card-body border-top'>
                                 <div className='card-title h5 text-center'>
                                     {name}
                                 </div>

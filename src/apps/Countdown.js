@@ -5,14 +5,64 @@ import React from 'react';
 import Nav from '../components/Nav';
 
 // css
-import '../styles/Counter.css';
+import '../styles/Countdown.css';
 
 const Countdown = () => {
     return (
         <>
             <Nav></Nav>
-            <section className='container'>
-                This is countdown
+            <section className='container mt-5'>
+
+                <div className='row text-center'>
+                    <div className='h1'>
+                        Countdown
+                    </div>
+                </div>
+
+                <form className='row mt-5 form-container'>
+
+                    <div className='col-2 col-lg-1'>
+                        <div className='row'>
+                            <input type="text" className='h1' id='days' placeholder='00' autoComplete='off' maxLength='2' />
+                        </div>
+                        <div className='row'>
+                            <label htmlFor="days">days</label>
+                        </div>
+                    </div>
+                    <div className='col-2 col-lg-1'>
+                        <div className='row'>
+                            <input type="text" className='h1' id='hours' placeholder='00' autoComplete='off' maxLength='2' />
+                        </div>
+                        <div className='row'>
+                            <label htmlFor="hours">hours</label>
+                        </div>
+                    </div>
+                    <div className='col-2 col-lg-1'>
+                        <div className='row'>
+                            <input type="text" className='h1' id='mins' placeholder='00' autoComplete='off' maxLength='2' />
+                        </div>
+                        <div className='row'>
+                            <label htmlFor="mins">mins</label>
+                        </div>
+                    </div>
+                    <div className='col-2 col-lg-1'>
+                        <div className='row'>
+                            <input type="text" className='h1' id='secs' placeholder='00' autoComplete='off' maxLength='2' />
+                        </div>
+                        <div className='row'>
+                            <label htmlFor="secs">secs</label>
+                        </div>
+                    </div>
+
+                </form>
+
+                <div className='row mt-5 text-center'>
+                    <div className='text-success h1'>
+                        <i className="bi bi-play-circle"></i>
+                        {/* <i className="bi bi-arrow-repeat text-danger h1"></i> */}
+                    </div>
+                </div>
+
             </section>
         </>
     )
