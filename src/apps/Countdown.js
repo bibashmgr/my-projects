@@ -22,41 +22,44 @@ const Countdown = () => {
     let {days,hours,mins,secs} = values;
 
     const handleCount = () => {
-        setPlay(!play);
-        if(btn.search(/play/) > 0){
-            setBtn('bi bi-arrow-repeat text-danger');
-            let sec = secs * 1000;
-            let min = mins * 1000 * 60;
-            let hour = hours * 1000 * 60 * 60;
-            let day = days * 1000 * 60 * 60 * 24;
+        if(days > 0 || hours > 0 || mins > 0 || secs > 0){
+            setPlay(!play);
+            if(btn.search(/play/) > 0){
+                setBtn('bi bi-arrow-repeat text-danger');
+                let sec = secs * 1000;
+                let min = mins * 1000 * 60;
+                let hour = hours * 1000 * 60 * 60;
+                let day = days * 1000 * 60 * 60 * 24;
 
-            let totalms = sec + min + hour + day;
+                let totalms = sec + min + hour + day;
 
-            setInterval(()=> {
-                totalms = totalms - 1000;
+                window.countStart = setInterval(()=> {
+                    totalms = totalms - 1000;
 
-                let textDay = Math.floor(totalms / (24 * 60 * 60 * 1000));
-                let textHour = Math.floor((totalms % (24 * 60 * 60 * 1000)) / (60 * 60 * 1000));
-                let textMin = Math.floor((totalms % (60 * 60 * 1000)) / ( 60 * 1000));
-                let textSec = Math.floor((totalms % (60 * 1000)) / (1000))
-                if(textDay < 10){
-                    textDay = '0' + textDay;
-                }
-                if(textHour < 10){
-                    textHour = '0' + textHour;
-                }
-                if(textMin < 10){
-                    textMin = '0' + textMin;
-                }
-                if(textSec < 10){
-                    textSec = '0' + textSec;
-                }
+                    let textDay = Math.floor(totalms / (24 * 60 * 60 * 1000));
+                    let textHour = Math.floor((totalms % (24 * 60 * 60 * 1000)) / (60 * 60 * 1000));
+                    let textMin = Math.floor((totalms % (60 * 60 * 1000)) / ( 60 * 1000));
+                    let textSec = Math.floor((totalms % (60 * 1000)) / (1000))
+                    if(textDay < 10){
+                        textDay = '0' + textDay;
+                    }
+                    if(textHour < 10){
+                        textHour = '0' + textHour;
+                    }
+                    if(textMin < 10){
+                        textMin = '0' + textMin;
+                    }
+                    if(textSec < 10){
+                        textSec = '0' + textSec;
+                    }
 
-                setValues({days:textDay, hours:textHour, mins:textMin, secs:textSec});
-            },1000);
-        }else {
-            setBtn('bi bi-play-circle text-success');
-            window.location.reload(true);
+                    setValues({days:textDay, hours:textHour, mins:textMin, secs:textSec});
+                },1000);
+            }else {
+                setBtn('bi bi-play-circle text-success');
+                setValues({days:0, hours:0, mins:0, secs:0});
+                clearInterval(window.countStart);
+            }
         }
     };
 
