@@ -15,8 +15,8 @@ const Section = () => {
                 {projects.map((project)=>{
                     const {id,name,url,img} = project;
                     return(
-                    <div className='project-container col-12 col-md-6 col-lg-4'>
-                        <Link to={url} key={id} className='project-box card shadow-sm text-decoration-none text-dark'>
+                    <div key={id} className='project-container col-12 col-md-6 col-lg-4'>
+                        <Link to={url} className='project-box card shadow-sm text-decoration-none text-dark'>
                             <div className='project-image'>
                                 <img src={img} alt={name} className='card-img-top' />
                             </div>
