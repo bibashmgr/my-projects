@@ -1,5 +1,6 @@
 // dependencies
 import React from 'react';
+// import { useState } from 'react';
 
 // components
 import Nav from '../components/Nav';
@@ -8,6 +9,10 @@ import Nav from '../components/Nav';
 import '../styles/Stopwatch.css';
 
 const Stopwatch = () => {
+
+    const playWatch = (e) => {
+    };
+
     return (
         <>
             <Nav></Nav>
@@ -48,9 +53,12 @@ const Stopwatch = () => {
 
                 </form>
 
-                <div className='row mt-5 justify-content-center'>
+                <div className='row mt-5 justify-content-center text-center'>
                     <div className='col-2 col-lg-1 h1'>
-                        <i className='bi bi-play-circle text-success'></i>
+                        <i className='bi bi-pause-circle text-warning'></i>
+                    </div>
+                    <div className='col-2 col-lg-1 h1'>
+                        <i className='bi bi-play-circle text-success' onClick={playWatch}></i>
                     </div>
                     <div className='col-2 col-lg-1 h1'>
                         <i className='bi bi-arrow-repeat text-danger'></i>

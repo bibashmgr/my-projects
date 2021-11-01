@@ -15,6 +15,6 @@ export const projects = [
         id: 3,
         name: 'Stopwatch',
         url: '/stopwatch',
-        img: './assets/default.png'
+        img: './assets/stopwatch.png'
     },
 ];
