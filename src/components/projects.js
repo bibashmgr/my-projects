@@ -11,4 +11,10 @@ export const projects = [
         url: '/countdown',
         img: './assets/countdown.png'
     },
+    {   
+        id: 3,
+        name: 'Stopwatch',
+        url: '/stopwatch',
+        img: './assets/default.png'
+    },
 ];

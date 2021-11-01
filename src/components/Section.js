@@ -10,7 +10,7 @@ import '../styles/Section.css';
 
 const Section = () => {
     return (
-        <section className='projects-container container mt-5'>
+        <section className='projects-container container mt-5 mb-5'>
             <div className='projects-box row gx-5 gy-5'>
                 {projects.map((project)=>{
                     const {id,name,url,img} = project;
