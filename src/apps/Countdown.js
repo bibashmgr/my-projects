@@ -14,10 +14,10 @@ const Countdown = () => {
     const [btn, setBtn] = useState('bi bi-play-circle text-success');
 
     const [values,setValues] = useState({
-        days: 0,
-        hours: 0,
-        mins: 0,
-        secs: 0,
+        days: '00',
+        hours: '00',
+        mins: '00',
+        secs: '00',
     });
     let {days,hours,mins,secs} = values;
 
@@ -57,7 +57,7 @@ const Countdown = () => {
                 },1000);
             }else {
                 setBtn('bi bi-play-circle text-success');
-                setValues({days:0, hours:0, mins:0, secs:0});
+                setValues({days:'00', hours:'00', mins:'00', secs:'00'});
                 clearInterval(window.countStart);
             }
         }

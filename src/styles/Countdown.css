@@ -11,3 +11,7 @@ input {
     width: 50%;
     padding: 1rem 0rem;
 }
+
+i {
+    transition: all 0.1s;
+}
