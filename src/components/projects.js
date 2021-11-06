@@ -17,4 +17,10 @@ export const projects = [
         url: '/stopwatch',
         img: './assets/stopwatch.png'
     },
+    {   
+        id: 4,
+        name: 'Digital Clock',
+        url: '/digital-clock',
+        img: './assets/default.png'
+    },
 ];

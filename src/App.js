@@ -10,6 +10,7 @@ import Error from './components/Error';
 import Counter from './apps/Counter';
 import Countdown from './apps/Countdown';
 import Stopwatch from './apps/Stopwatch';
+import DigitalClock from './apps/DigitalClock';
 
 const App = () => {
   return (
@@ -27,6 +28,9 @@ const App = () => {
           </Route>
           <Route exact path='/stopwatch'>
             <Stopwatch></Stopwatch>
+          </Route>
+          <Route exact path='/digital-clock'>
+            <DigitalClock></DigitalClock>
           </Route>
           <Route path='*'>
             <Error></Error>
