@@ -1,5 +1,9 @@
-.bi-pause-circle,
-.bi-arrow-repeat {
+.inactive {
     opacity: 0.5;
     pointer-events: none;
+}
+
+.active {
+    opacity: 1;
+    pointer-events: all;
 }
