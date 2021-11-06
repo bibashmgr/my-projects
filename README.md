@@ -14,6 +14,12 @@
 
 3. __Stopwatch:__
 
-    A simple web app with start, stop and reset buttons that can be started and stopped at will for exact timing.
+    A simple web app with start, stop and reset buttons that can be started, stopped and reset at will for exact timing.
 
     ![countdown](https://github.com/bibashmgr/my-projects/blob/master/public/assets/stopwatch.png)
+
+4. __Digital Clock:__
+
+    A simple web app that shows the current time in digital format.
+
+    ![countdown](https://github.com/bibashmgr/my-projects/blob/master/public/assets/digital-clock.png)

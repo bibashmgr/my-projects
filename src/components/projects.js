@@ -21,6 +21,6 @@ export const projects = [
         id: 4,
         name: 'Digital Clock',
         url: '/digital-clock',
-        img: './assets/default.png'
+        img: './assets/digital-clock.png'
     },
 ];
