@@ -36,12 +36,10 @@ const DigitalClock = () => {
             }
 
             setValues({hours:currentHours,mins:currentMins,secs:currentSecs});
-            // console.log('set');
         },1000);
 
         return () => {
             clearInterval(clockInterval);
-            // console.log('clear');
         }
     },[]);
 
