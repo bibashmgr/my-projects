@@ -11,3 +11,9 @@
     A simple web app thats count time in backward from a starting number to indicate user how much time is left to finish a certain task.
 
     ![countdown](https://github.com/bibashmgr/my-projects/blob/master/public/assets/countdown.png)
+
+3. __Stopwatch:__
+
+    A simple web app with start, stop and reset buttons that can be started and stopped at will for exact timing.
+
+    ![countdown](https://github.com/bibashmgr/my-projects/blob/master/public/assets/stopwatch.png)

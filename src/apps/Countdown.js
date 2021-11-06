@@ -39,7 +39,7 @@ const Countdown = () => {
                     let textDay = Math.floor(totalms / (24 * 60 * 60 * 1000));
                     let textHour = Math.floor((totalms % (24 * 60 * 60 * 1000)) / (60 * 60 * 1000));
                     let textMin = Math.floor((totalms % (60 * 60 * 1000)) / ( 60 * 1000));
-                    let textSec = Math.floor((totalms % (60 * 1000)) / (1000))
+                    let textSec = Math.floor((totalms % (60 * 1000)) / (1000));
                     if(textDay < 10){
                         textDay = '0' + textDay;
                     }
