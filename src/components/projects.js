@@ -23,4 +23,10 @@ export const projects = [
         url: '/digital-clock',
         img: './assets/digital-clock.png'
     },
+    {   
+        id: 5,
+        name: 'Flip Watch',
+        url: '/flip-watch',
+        img: './assets/default.png'
+    },
 ];

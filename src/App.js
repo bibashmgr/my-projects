@@ -11,6 +11,7 @@ import Counter from './apps/Counter';
 import Countdown from './apps/Countdown';
 import Stopwatch from './apps/Stopwatch';
 import DigitalClock from './apps/DigitalClock';
+import FlipWatch from './apps/FlipWatch';
 
 const App = () => {
   return (
@@ -31,6 +32,9 @@ const App = () => {
           </Route>
           <Route exact path='/digital-clock'>
             <DigitalClock></DigitalClock>
+          </Route>
+          <Route exact path='/flip-watch'>
+            <FlipWatch></FlipWatch>
           </Route>
           <Route path='*'>
             <Error></Error>
