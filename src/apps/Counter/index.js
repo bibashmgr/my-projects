@@ -3,10 +3,10 @@ import React from 'react';
 import {useState} from 'react';
 
 // components
-import Nav from '../components/Nav';
+import Nav from '../../components/Nav';
 
 // css
-import '../styles/Counter.css';
+import './index.css';
 
 const Counter = () => {
     const [value, setValue] = useState(0);

@@ -1,6 +1,6 @@
 // dependencies
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // components
 import Home from './components/Home';
@@ -11,38 +11,34 @@ import Counter from './apps/Counter';
 import Countdown from './apps/Countdown';
 import Stopwatch from './apps/Stopwatch';
 import DigitalClock from './apps/DigitalClock';
-import FlipWatch from './apps/FlipWatch';
+import AnalogClock from './apps/AnalogClock';
+import Carousel from './apps/Carousel';
 
 const App = () => {
   return (
     <>
       <Router>
-        <Switch>
-          <Route exact path='/'>
-            <Home></Home>
-          </Route>
-          <Route exact path='/counter'>
-            <Counter></Counter>
-          </Route>
-          <Route exact path='/countdown'>
-            <Countdown></Countdown>
-          </Route>
-          <Route exact path='/stopwatch'>
-            <Stopwatch></Stopwatch>
-          </Route>
-          <Route exact path='/digital-clock'>
-            <DigitalClock></DigitalClock>
-          </Route>
-          <Route exact path='/flip-watch'>
-            <FlipWatch></FlipWatch>
-          </Route>
-          <Route path='*'>
-            <Error></Error>
-          </Route>
-        </Switch>
+        <Routes>
+          <Route path='/' exact element={<Home />} />
+          <Route path='/app/*' exact element={<Apps />} />
+          <Route path='*' element={<Error />} />
+        </Routes>
       </Router>
     </>
   );
+}
+
+const Apps = () => {
+  return (
+    <Routes>
+        <Route path='/counter' exact element={<Counter />} />
+        <Route path='/countdown' exact element={<Countdown />} />
+        <Route path='/stopwatch' exact element={<Stopwatch />} />
+        <Route path='/digital-clock' exact element={<DigitalClock />} />
+        <Route path='/analog-clock' exact element={<AnalogClock />} />
+        <Route path='/carousel' exact element={<Carousel />} />
+    </Routes>
+  )
 }
 
 export default App;

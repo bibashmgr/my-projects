@@ -3,10 +3,10 @@ import React from 'react';
 import {useState,useEffect} from 'react';
 
 // components
-import Nav from '../components/Nav'
+import Nav from '../../components/Nav'
 
 // css
-import '../styles/DigitalClock.css';
+import './index.css';
 
 const DigitalClock = () => {
 

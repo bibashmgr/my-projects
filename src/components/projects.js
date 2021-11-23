@@ -2,31 +2,37 @@ export const projects = [
     {   
         id: 1,
         name: 'Counter',
-        url: '/counter',
+        url: '/app/counter',
         img: './assets/counter.png'
     },
     {   
         id: 2,
         name: 'Countdown',
-        url: '/countdown',
+        url: '/app/countdown',
         img: './assets/countdown.png'
     },
     {   
         id: 3,
         name: 'Stopwatch',
-        url: '/stopwatch',
+        url: '/app/stopwatch',
         img: './assets/stopwatch.png'
     },
     {   
         id: 4,
         name: 'Digital Clock',
-        url: '/digital-clock',
+        url: '/app/digital-clock',
         img: './assets/digital-clock.png'
     },
     {   
         id: 5,
-        name: 'Flip Watch',
-        url: '/flip-watch',
+        name: 'Analog Clock',
+        url: '/app/analog-clock',
+        img: './assets/analog-clock.png'
+    },
+    {   
+        id: 6,
+        name: 'Carousel',
+        url: '/app/carousel',
         img: './assets/default.png'
     },
 ];
