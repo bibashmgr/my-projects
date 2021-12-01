@@ -16,10 +16,22 @@
 
     A simple web app with start, stop and reset buttons that can be started, stopped and reset at will for exact timing.
 
-    ![countdown](https://github.com/bibashmgr/my-projects/blob/master/public/assets/stopwatch.png)
+    ![Stopwatch](https://github.com/bibashmgr/my-projects/blob/master/public/assets/stopwatch.png)
 
 4. __Digital Clock:__
 
     A simple web app that shows the current time in digital format.
 
-    ![countdown](https://github.com/bibashmgr/my-projects/blob/master/public/assets/digital-clock.png)
+    ![digital-clock](https://github.com/bibashmgr/my-projects/blob/master/public/assets/digital-clock.png)
+
+5. __Analog Clock:__
+
+    A simple web app that shows the current time in analog format.
+
+    ![analog-clock](https://github.com/bibashmgr/my-projects/blob/master/public/assets/analog-clock.png)
+
+6. __Carousel:__
+
+    A simple web app that lets you cycle through a series of images or content by clicking buttons.
+
+    ![carousel](https://github.com/bibashmgr/my-projects/blob/master/public/assets/carousel.jpg)

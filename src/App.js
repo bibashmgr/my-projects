@@ -13,6 +13,7 @@ import Stopwatch from './apps/Stopwatch';
 import DigitalClock from './apps/DigitalClock';
 import AnalogClock from './apps/AnalogClock';
 import Carousel from './apps/Carousel';
+import Form from './apps/Form';
 
 const App = () => {
   return (
@@ -37,6 +38,7 @@ const Apps = () => {
         <Route path='/digital-clock' exact element={<DigitalClock />} />
         <Route path='/analog-clock' exact element={<AnalogClock />} />
         <Route path='/carousel' exact element={<Carousel />} />
+        <Route path='/form' exact element={<Form />} />
     </Routes>
   )
 }

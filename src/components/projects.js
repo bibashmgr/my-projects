@@ -35,4 +35,10 @@ export const projects = [
         url: '/app/carousel',
         img: './assets/carousel.jpg'
     },
+    {   
+        id: 7,
+        name: 'Form',
+        url: '/app/form',
+        img: './assets/default.png'
+    },
 ];
