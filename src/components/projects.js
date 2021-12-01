@@ -39,6 +39,6 @@ export const projects = [
         id: 7,
         name: 'Form',
         url: '/app/form',
-        img: './assets/default.png'
+        img: './assets/form.jpg'
     },
 ];
