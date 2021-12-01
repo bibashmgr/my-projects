@@ -67,7 +67,7 @@ const Carousel = () => {
                 {/* heading */}
                 <div className='row mt-5 text-center'>
                     <div className='h1'>
-                        This is Carousel
+                        Carousel
                     </div>
                 </div>
                 {/* slider */}
