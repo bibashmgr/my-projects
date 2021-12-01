@@ -7,7 +7,7 @@ const Nav = () => {
         <nav className='navbar navbar-brand-center navbar-dark bg-dark'>
             <div className='container-fluid'>
                 <Link to='/' className='navbar-brand mx-auto fs-3'>
-                    My React Projects
+                    My Projects
                 </Link>
             </div>
         </nav>
