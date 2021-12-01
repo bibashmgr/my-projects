@@ -33,6 +33,6 @@ export const projects = [
         id: 6,
         name: 'Carousel',
         url: '/app/carousel',
-        img: './assets/default.png'
+        img: './assets/carousel.jpg'
     },
 ];
